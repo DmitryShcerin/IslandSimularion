@@ -1,4 +1,7 @@
 package org.example.animals;
 
-public class AnimalFactory {
+@FunctionalInterface
+interface AnimalFactory{
+    Animal create();
 }
+
