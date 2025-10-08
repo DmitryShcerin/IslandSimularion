@@ -3,7 +3,7 @@ package org.example.animals;
 import org.example.environment.Island;
 import org.example.environment.Location;
 
-abstract class Animal {
+public abstract class Animal {
     protected double weight;
     protected int maxPerCell;
     protected int speed;
