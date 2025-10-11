@@ -7,8 +7,8 @@ import org.example.environment.Plant;
 import java.util.List;
 
 public abstract class Herbivore extends Animal {
-    public Herbivore(double satiety, double foodNeeded, int speed, int maxPerCell, double weight) {
-        super(satiety, foodNeeded, speed, maxPerCell, weight);
+    public Herbivore(double weight, int maxPerCell, int speed, double foodNeeded) {
+        super(weight, maxPerCell, speed, foodNeeded);
     }
 
     @Override
@@ -24,7 +24,7 @@ public abstract class Herbivore extends Animal {
     }
 
     @Override
-    public void move(Island island,Location currentLocation){
+    public void move(Island island, Location currentLocation) {
         if (speed == 0) return;
     }
     //реализовать движение

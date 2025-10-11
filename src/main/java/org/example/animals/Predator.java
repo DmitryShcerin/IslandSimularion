@@ -9,8 +9,8 @@ import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
 public abstract class Predator extends Animal {
-    public Predator(double satiety, double foodNeeded, int speed, int maxPerCell, double weight) {
-        super(satiety, foodNeeded, speed, maxPerCell, weight);
+    public Predator(double weight, int maxPerCell, int speed, double foodNeeded) {
+        super(weight, maxPerCell, speed, foodNeeded);
     }
 
     @Override

@@ -11,12 +11,12 @@ public abstract class Animal {
     protected double satiety;
     protected boolean isAlive = true;
 
-    public Animal(double satiety, double foodNeeded, int speed, int maxPerCell, double weight) {
-        this.satiety = satiety;
-        this.foodNeeded = foodNeeded;
-        this.speed = speed;
-        this.maxPerCell = maxPerCell;
+    public Animal(double weight, int maxPerCell, int speed, double foodNeeded) {
         this.weight = weight;
+        this.maxPerCell = maxPerCell;
+        this.speed = speed;
+        this.foodNeeded = foodNeeded;
+        this.satiety = foodNeeded;
     }
 
     public abstract void eat(Location location);
