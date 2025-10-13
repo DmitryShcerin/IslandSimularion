@@ -1,4 +1,9 @@
 package org.example.animals.herbivores;
 
-public class Buffalo {
+import org.example.animals.Herbivore;
+
+public class Buffalo extends Herbivore {
+    public Buffalo(){
+        super(700,10,3,100);
+    }
 }
