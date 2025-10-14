@@ -4,10 +4,10 @@ public class Plant {
     private static final double WEIGHT =1;
     private static final int MAX_PER_CELL = 200;
 
-    public double getWeight(){
+    public static double getWeight(){
         return WEIGHT;
     }
-    public int getMaxPerCell(){
+    public static int getMaxPerCell(){
         return MAX_PER_CELL;
     }
 }
