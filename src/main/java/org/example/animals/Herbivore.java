@@ -11,6 +11,18 @@ public abstract class Herbivore extends Animal {
     public Herbivore(double weight, int maxPerCell, int speed, double foodNeeded) {
         super(weight, maxPerCell, speed, foodNeeded);
     }
+    @Override
+    public void eat(Location location){
+        if (satiety>=foodNeeded) return;
+
+        List<Plant> plants = location.getPlants();
+        int i = 0;
+        while (i<plants.size()&&satiety<foodNeeded){
+            Plant plant = plants.get(i);
+            satiety = Math.min(satiety+Plant.getWeight(),foodNeeded);
+            plants.remove(i);
+        }
+    }
 
     @Override
     public void move(Island island, Location currentLocation) {
